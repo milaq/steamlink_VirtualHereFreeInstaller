@@ -17,15 +17,14 @@ export DESTDIR="${PWD}/steamlink/apps/VirtualHereFreeInstaller"
 # Copy the files to the app directory
 mkdir -p "${DESTDIR}"
 cp -v -r res/ "${DESTDIR}"
-cp -v install.sh "${DESTDIR}"
-cp -v vhf_installer_screen "${DESTDIR}"
+cp -v vhf_installer "${DESTDIR}"
 cp -v icon.png "${DESTDIR}"
 
 # Create the table of contents and icon
 cat >"${DESTDIR}/toc.txt" <<__EOF__
 name=VirtualHereFree Installer
 icon=icon.png
-run=install.sh
+run=vhf_installer
 __EOF__
 
 # Pack it up
