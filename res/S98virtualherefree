@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ -f /mnt/config/system/virtualherefree_enabled.txt ]; then
+  /usr/local/bin/vhfwatchdog &
+fi

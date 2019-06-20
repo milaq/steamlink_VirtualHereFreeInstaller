@@ -1,0 +1,18 @@
+#!/bin/sh
+
+check_vh() {
+  if [ $(pidof streaming_client | wc -l) -eq 0 ] && [ $(pidof vhusbdarm | wc -l) -gt 0 ]; then
+    echo "Streaming connection ended, stopping VirtualHereFree server..."
+    pkill vhusbdarm
+    sleep 10
+  elif [ $(pidof streaming_client | wc -l) -gt 0 ] && [ $(pidof vhusbdarm | wc -l) -eq 0 ]; then
+    echo "Streaming connection established, starting VirtualHereFree server..."
+    /usr/local/bin/vhusbdarm -c /mnt/config/system/virtualherefree_config.ini -b
+    sleep 2
+  fi
+}
+
+while true; do
+  check_vh
+  sleep 3
+done
