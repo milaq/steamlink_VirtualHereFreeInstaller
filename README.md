@@ -41,3 +41,8 @@ To update to a newer Virtualhere server version just run the installer again.
 You can customize several server settings via the server configuration file by editing `/mnt/config/system/virtualherefree_config.ini` directly or by putting a copy of the [virtualherefree_config.ini](res/virtualherefree_config.ini) onto a FAT32 formatted USB stick in the directory `steamlink/config/system/`.
 
 For all documented options see: https://virtualhere.com/configuration_faq
+
+## Building
+
+Clone the [SteamLink SDK](https://github.com/ValveSoftware/steamlink-sdk) and copy this repository to the `examples` subdirectory (or any other subdirectory with a depth of one).
+Then from within that directory, execute `build_steamlink.sh`.
