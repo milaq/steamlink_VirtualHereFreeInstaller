@@ -1,4 +1,4 @@
-![](icon.png)
+![](icon_dark.png)
 
 # VirtualHereFree Installer for Steam Link
 
