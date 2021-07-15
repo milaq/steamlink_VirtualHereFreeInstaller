@@ -113,7 +113,7 @@ int main(int argc, char *argv[]) {
     SDL_Color textColorError = {255, 0, 0, 0};
     SDL_Color textColor = {255, 255, 255, 0};
 
-    getSDLText(renderer, TEXT_MARGIN, TEXT_MARGIN, "VirtualHereFree installer by milaq", font, textColorHeader, &texture_header, &textbox_header);
+    getSDLText(renderer, TEXT_MARGIN, TEXT_MARGIN, "VirtualHereFree Installer by milaq", font, textColorHeader, &texture_header, &textbox_header);
     getSDLText(renderer, TEXT_MARGIN, textbox_header.y + 2 * textbox_header.h, "Downloading VirtualHere binary...", font, textColor, &texture_download, &textbox_download);
     getSDLText(renderer, TEXT_MARGIN, textbox_download.y + textbox_download.h, "Installing service...", font, textColor, &texture_copy, &textbox_copy);
 

@@ -2,17 +2,17 @@
 
 # VirtualHereFree Installer for Steam Link
 
-VirtualHere is a proprietary ripoff of the open source USB/IP project. It allows you to "stream" USB devices to another
+VirtualHere is a proprietary version of the open source USB/IP project. It allows you to "stream" USB devices to another
 machine to have it behave like it would be directly connected to the client.
 
 The Steam Link comes with an integrated version of VirtualHere.
 Since several versions, the integrated version requires you to buy and use the Steam store version of VirtualHere.
 
-There is also a ["free" version of VirtualHere available](https://www.virtualhere.com/usb_client_software), which allows one to pass one device at a time for free.
+There is also a ["free" version of VirtualHere available](https://www.virtualhere.com/usb_client_software), which allows one to share one device for free.
 The free client doesn't work with the Steam Link integrated version.
-Fortunately, there are ARM binaries of the VirtualHere server available which can be run on the Steam Link.
+Fortunately, there are ARM binaries of the VirtualHere server available which are compatible with the Steam Link.
 
-The VirtualHereFree Installer deploys the "free" version of the VirtualHere server to your Steam Link and manages the starting and
+The VirtualHereFree Installer downloads the free version of the VirtualHere server to your Steam Link and manages the starting and
 stopping of the server automatically, enabling you to use the free VirtualHere client binaries on your host machine.
 
 ## Installation
@@ -26,8 +26,10 @@ Download the latest version of the VirtualHereFree Installer from the [releases 
  * Reboot your Steam Link
  * Select the installer from the main menu
 
-When you start streaming, the free version of the VirtualHere server gets started automatically and is closed when you stop streaming.
+When you start streaming, the VirtualHere server gets started automatically and is closed when you stop streaming.
 Once installed, you can delete the installer application if you please.
+
+To update to a newer Virtualhere server version just run the installer again.
 
 ### On your Desktop PC (client)
 
